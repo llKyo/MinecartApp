@@ -54,40 +54,37 @@
         android:textAlignment="viewStart"
         android:textSize="20sp" />
 
-    <RadioButton
-        android:id="@+id/radioBateria"
+    <CheckBox
+        android:id="@+id/cbxBasteria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:text="Batería RedStone del Minecart" />
 
-    <RadioButton
-        android:id="@+id/radioPuertaCabina"
+    <CheckBox
+        android:id="@+id/cbxPuertaCabina"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:text="Sensor puerta cabina" />
 
-    <RadioButton
-        android:id="@+id/radioPuertaBodega"
+    <CheckBox
+        android:id="@+id/cbxPuertaBoveda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:text="Sensor puerta de la bóveda" />
 
-    <RadioButton
-        android:id="@+id/radioPreBodega"
+    <CheckBox
+        android:id="@+id/cbxCamaraPreBoveda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="cámara pre-bóveda" />
+        android:text="Cámara de la pre-boveda" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Agregar Minecart"
+        android:onClick="agregarMinecart"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="#fff"/>
 
