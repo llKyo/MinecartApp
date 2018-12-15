@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         editUsername = findViewById(R.id.editUsername);
         editPassword = findViewById(R.id.editPassword);
     }
-    public void ingresar(View view){
+    public void ingresar(View v){
         String username = editUsername.getText().toString().trim();
         String password = editPassword.getText().toString().trim();
         traerUsuarios();
@@ -92,5 +92,9 @@ public class MainActivity extends AppCompatActivity {
             Log.e("ERROR", ex.toString());
         }
 
+    }
+    public void limpiar(View v){
+        editUsername.setText("");
+        editPassword .setText("");
     }
 }

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activies.ListarMinecart">
+    tools:context=".activies.ListarMinecart"
+    android:background="@drawable/tierra_maincra">
 
     <ListView
         android:id="@+id/listViewMinecart"

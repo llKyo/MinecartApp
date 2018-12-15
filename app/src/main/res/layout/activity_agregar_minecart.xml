@@ -6,8 +6,10 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".activies.AgregarMinecart"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp">
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/tierra_maincra"
+    android:paddingTop="20dp">
 
     <TextView
         android:id="@+id/textView"
@@ -18,6 +20,7 @@
         android:text="Agregar Minecart "
         android:textAlignment="center"
         android:textSize="30sp"
+        android:textColor="#000"
         android:textStyle="bold" />
 
     <EditText
@@ -26,7 +29,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Patente"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textColorHint="#404040"/>
 
     <EditText
         android:id="@+id/editModelo"
@@ -34,7 +40,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Modelo"
-        android:inputType="text|textPersonName" />
+        android:textColor="#000"
+        android:inputType="text|textPersonName"
+        android:textStyle="bold"
+        android:textColorHint="#404040"/>
 
     <EditText
         android:id="@+id/editNroFlota"
@@ -42,16 +51,20 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Numero de Flota"
-        android:inputType="number" />
+        android:textColor="#000"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textColorHint="#404040"/>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
         android:text="• Elementos en buen estado:"
         android:textAlignment="viewStart"
+        android:textColor="#000"
         android:textSize="20sp" />
 
     <CheckBox
@@ -65,21 +78,25 @@
         android:id="@+id/cbxPuertaCabina"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="Sensor puerta cabina" />
 
     <CheckBox
         android:id="@+id/cbxPuertaBoveda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="Sensor puerta de la bóveda" />
 
     <CheckBox
         android:id="@+id/cbxCamaraPreBoveda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="Cámara de la pre-boveda" />
 
     <Button
+        android:layout_marginTop="20dp"
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

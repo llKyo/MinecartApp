@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activies.MainActivity"
-    android:layout_marginTop="50dp"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp">
+    android:paddingLeft="20dp"
+    android:paddingTop="80dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/tierra_maincra"
+    tools:context=".activies.MainActivity">
 
 
     <ImageView
@@ -16,26 +17,32 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:src="@tools:sample/avatars[3]"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="40dp"
+        tools:src="@drawable/minecrart_chest" />
 
     <EditText
         android:id="@+id/editUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="  Username"
-        android:layout_marginBottom="20dp"/>
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="#404040"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="  Password"
-        android:layout_marginBottom="40dp"/>
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textColorHint="#404040" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,18 +54,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="Ingresar"
             android:onClick="ingresar"
-            />
+            android:backgroundTint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Ingresar" />
 
         <Button
-            android:layout_marginLeft="10dp"
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="Limpiar"
-            />
+            android:onClick="limpiar"
+            android:backgroundTint="@color/colorPrimary_2"
+            android:text="Limpiar" />
     </LinearLayout>
 
 
